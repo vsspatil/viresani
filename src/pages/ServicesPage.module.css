@@ -1,0 +1,108 @@
+/* HERO SECTION */
+
+.servicePageHeroSection {
+  width: 100%;
+  height: 400px;
+
+  background-image: url("/ass.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.servicePageHeroOverlay {
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.55);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.servicePageHeroContent {
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.servicePageHeroContent h1 {
+  font-size: 72px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.servicePageHeroContent p {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.servicePageHeroContent span {
+  color: #ff8c00;
+  margin: 0 8px;
+}
+
+/* LARGE TABLETS */
+
+@media (max-width: 992px) {
+  .servicePageHeroSection {
+    height: 420px;
+  }
+
+  .servicePageHeroContent h1 {
+    font-size: 54px;
+  }
+}
+
+/* TABLETS */
+
+@media (max-width: 768px) {
+  .servicePageHeroSection {
+    height: 350px;
+
+    /* Better mobile performance */
+    background-attachment: scroll;
+  }
+
+  .servicePageHeroContent h1 {
+    font-size: 42px;
+  }
+
+  .servicePageHeroContent p {
+    font-size: 16px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+  .servicePageHeroSection {
+    height: 300px;
+  }
+
+  .servicePageHeroContent h1 {
+    font-size: 32px;
+  }
+
+  .servicePageHeroContent p {
+    font-size: 14px;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 360px) {
+  .servicePageHeroContent h1 {
+    font-size: 28px;
+  }
+}

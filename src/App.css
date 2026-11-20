@@ -1,0 +1,80 @@
+/* ===== RESET ===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== STOP HORIZONTAL SCROLL ===== */
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* ===== MAIN CONTAINER FIX ===== */
+body{
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ===== IMAGES FIX ===== */
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ===== SECTION FIX ===== */
+section,
+div,
+container{
+    max-width: 100%;
+}
+
+/* ===== PREVENT EXTRA WIDTH ===== */
+.row,
+.container,
+.nav-container,
+.footer-container,
+.about-container,
+.contact-container,
+.business-form-container,
+.ultra-form-container{
+    width: 100%;
+    max-width: 100%;
+}
+
+/* ===== MOBILE FIX ===== */
+@media screen and (max-width:768px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    *{
+        max-width: 100%;
+    }
+
+}
+/* Hide Right Scrollbar */
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar{
+    width: 0px;
+    background: transparent;
+}
+
+/* Firefox */
+html{
+    scrollbar-width: none;
+}
+
+/* IE and Edge */
+body{
+    -ms-overflow-style: none;
+}
+#root {
+  padding-top: 60px;
+}

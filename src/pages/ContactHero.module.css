@@ -1,0 +1,94 @@
+.contactHeroSection {
+  width: 100%;
+  height: 400px;
+
+  background-image: url("/contact.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.contactHeroOverlay {
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.55);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactHeroContent {
+  text-align: center;
+  color: white;
+
+  padding: 0 20px;
+}
+
+.contactHeroContent h1 {
+  font-size: 70px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.contactHeroContent p {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.contactHeroContent span {
+  margin: 0 8px;
+  color: #0f67d9;
+}
+
+/* Tablet */
+
+@media (max-width: 992px) {
+  .contactHeroSection {
+    height: 420px;
+  }
+
+  .contactHeroContent h1 {
+    font-size: 52px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .contactHeroSection {
+    height: 350px;
+    background-attachment: scroll;
+  }
+
+  .contactHeroContent h1 {
+    font-size: 40px;
+  }
+
+  .contactHeroContent p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactHeroSection {
+    height: 300px;
+  }
+
+  .contactHeroContent h1 {
+    font-size: 32px;
+  }
+
+  .contactHeroContent p {
+    font-size: 14px;
+  }
+}

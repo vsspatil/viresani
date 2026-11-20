@@ -1,0 +1,148 @@
+/* ================= NAVBAR ================= */
+
+.main-nav {
+  background: rgba(255,255,255,.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0,0,0,.08);
+
+  padding: 10px 0;
+
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease;
+
+  z-index: 9999;
+}
+
+.nav-visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.nav-hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+/* LOGO */
+.nav-logo img{
+  width:180px;
+}
+
+/* MENU */
+.nav-center{
+  gap:18px;
+}
+
+.main-nav .nav-link{
+  color:#000!important;
+  padding:14px 16px;
+  font-weight:700;
+  position:relative;
+  transition:.3s;
+  letter-spacing:.4px;
+}
+
+.main-nav .nav-link:hover{
+  color:#ff8c00!important;
+}
+
+/* UNDERLINE ANIMATION */
+.main-nav .nav-link::after{
+  content:"";
+  width:0;
+  height:2px;
+  background:#ff8c00;
+  position:absolute;
+  bottom:5px;
+  left:50%;
+  transform:translateX(-50%);
+  transition:.3s;
+}
+
+.main-nav .nav-link:hover::after{
+  width:65%;
+}
+
+/* RIGHT INFO (PHONE + LOCATION) */
+.nav-info{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.info-item{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:14px;
+  font-weight:600;
+  color:#000;
+}
+
+.info-item i{
+  color:#ff8c00;
+  font-size:16px;
+}
+
+/* TOGGLER */
+.navbar-toggler{
+  border:none;
+}
+
+.navbar-toggler:focus{
+  box-shadow:none;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:992px){
+
+  .nav-logo{
+    margin:0 ;
+  }
+
+  .navbar-collapse{
+    text-align:center;
+    padding:15px 0;
+    animation:fadeIn .4s ease;
+  }
+
+  .nav-center{
+    flex-direction:column;
+    gap:8px;
+  }
+
+  .main-nav .nav-link{
+    padding:12px;
+    font-size:15px;
+  }
+
+  .nav-info{
+    flex-direction:column;
+    gap:10px;
+    margin-top:15px;
+  }
+}
+
+/* SMALL PHONES */
+@media(max-width:576px){
+
+  .nav-logo img{
+    width:100px;
+  }
+
+  .main-nav .nav-link{
+    font-size:14px;
+  }
+
+  .info-item{
+    font-size:13px;
+  }
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(-10px)}
+  to{opacity:1; transform:translateY(0)}
+}

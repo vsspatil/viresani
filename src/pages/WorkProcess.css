@@ -1,0 +1,205 @@
+
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+.process-section{
+  font-family:'Inter', sans-serif;
+}
+
+/* TAG */
+.process-head span{
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  color:#ff8c00;
+}
+
+/* MAIN TITLE */
+.process-head h2{
+  font-size:46px;
+  font-weight:900;
+  line-height:1.15;
+  margin:15px 0;
+}
+
+/* DESCRIPTION */
+.process-head p{
+  font-size:16px;
+  line-height:1.9;
+  max-width:700px;
+  margin:auto;
+  color:#e5e7eb;
+}
+
+/* CARD TITLE */
+.process-card h4{
+  font-size:20px;
+  font-weight:bolder;
+  margin-bottom:8px;
+  letter-spacing:.4px;
+}
+
+/* CARD TEXT */
+.process-card p{
+  font-size:15px;
+  line-height:1.8;
+  color:#f3f4f6;
+}
+
+/* STEP NUMBER */
+.step-no{
+  font-size:48px;
+  font-weight:900;
+  letter-spacing:2px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .process-head h2{
+    font-size:30px;
+  }
+
+  .process-head p{
+    font-size:15px;
+  }
+}
+
+
+
+
+
+
+
+
+.process-section{
+    padding:120px 0;
+    background:url("/Images/slider-1.jpg") center/cover fixed;
+    position:relative;
+    color:#fff;
+  }
+  
+  /* PARALLAX OVERLAY */
+  .process-overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(135deg,#000000c9,#00000090);
+  }
+  
+  /* HEADER */
+  .process-head{
+    position:relative;
+    text-align:center;
+    margin-bottom:70px;
+  }
+  
+  .process-head span{
+    color:#ff8c00;
+    letter-spacing:3px;
+    font-weight:700;
+  }
+  
+  .process-head h2{
+    font-size:44px;
+    font-weight:900;
+    margin:15px 0;
+  }
+  
+  .process-head p{
+    max-width:650px;
+    margin:auto;
+    opacity:.9;
+  }
+  
+  /* GRID */
+  .process-grid{
+    position:relative;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:35px;
+  }
+  
+  /* CARD */
+  .process-card{
+    background:rgba(255,255,255,.1);
+    backdrop-filter:blur(15px);
+    border-radius:25px;
+    padding:40px 30px;
+    position:relative;
+    overflow:hidden;
+    transition:.6s;
+  }
+  
+  /* GLOW */
+  .process-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(135deg,#ff8c00,#ffb347);
+    opacity:0;
+    transition:.5s;
+  }
+  
+  .process-card:hover::before{
+    opacity:.15;
+  }
+  
+  .process-card:hover{
+    transform:translateY(-12px) scale(1.02);
+  }
+  
+  /* CONTENT */
+  .process-card *{
+    position:relative;
+    z-index:2;
+  }
+  
+  /* ICON */
+  .step-icon{
+    width:75px;
+    height:75px;
+    background:#ff8c00;
+    border-radius:22px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:32px;
+    margin-bottom:20px;
+    animation:float 3s infinite ease-in-out;
+  }
+  
+  @keyframes float{
+    0%{transform:translateY(0)}
+    50%{transform:translateY(-8px)}
+    100%{transform:translateY(0)}
+  }
+  
+  /* TEXT */
+  .process-card h4{
+    font-weight:800;
+    margin-bottom:10px;
+  }
+  
+  .process-card p{
+    font-size:15px;
+    opacity:.9;
+    line-height:1.7;
+  }
+  
+  /* STEP NUMBER */
+  .step-no{
+    position:absolute;
+    right:20px;
+    top:15px;
+    font-size:50px;
+    font-weight:900;
+    color:rgba(255,255,255,.08);
+  }
+  
+  /* RESPONSIVE */
+  @media(max-width:768px){
+    .process-head h2{
+      font-size:30px;
+    }
+  }
+  

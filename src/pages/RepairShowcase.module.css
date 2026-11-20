@@ -1,0 +1,492 @@
+.repairWrapper {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* HERO */
+
+.repairHeroSection {
+  min-height: 680px;
+
+  background-image: url("https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1920");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  display: flex;
+  align-items: center;
+}
+
+.repairHeroOverlay {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.521);
+}
+
+.repairHeroContent {
+  max-width: 1400px; /* instead of 1200px */
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 80px 40px;
+}
+
+.repairHeroText {
+  flex: 1;
+}
+
+.repairSmallHeading {
+  color: #111111;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.repairHeroText h1 {
+  font-size: 65px;
+  line-height: 1.1;
+  margin: 15px 0;
+  color: #000000;
+}
+
+.repairHeroText h1 span {
+  color: #ff8c00;
+}
+
+.repairHeroText p {
+  max-width: 550px;
+  color: #000000;
+  line-height: 1.8;
+}
+
+.repairHeroText button {
+  margin-top: 25px;
+  padding: 13px 32px;
+
+  border: none;
+  border-radius: 5px;
+
+  background: #ff8c00;
+  color: white;
+  cursor: pointer;
+}
+.repairHeroImage {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* pushes image to right */
+  align-items: center;
+  padding-right: 40px; /* gap from right edge */
+}
+
+.repairHeroImage img {
+  width: 100%;
+  max-width: 420px; /* increase size if needed */
+  object-fit: contain;
+}
+
+/* CTA */
+
+.repairCtaStrip {
+  background: linear-gradient(
+    90deg,
+    #ff8c00,
+    #e79531
+  );
+
+  color: white;
+
+  padding: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.repairCtaIcon {
+  font-size: 45px;
+}
+
+.repairCtaText {
+  flex: 1;
+}
+
+.repairCtaText h3 {
+  margin-bottom: 8px;
+}
+
+.repairCtaStrip button {
+  padding: 14px 30px;
+  border: none;
+  border-radius: 4px;
+  background: white;
+  color: #ff8c00;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ABOUT */
+
+.repairHelpSection {
+  max-width: 1200px;
+
+  margin: auto;
+  padding: 20px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 70px;
+}
+
+.repairHelpText {
+  flex: 1;
+}
+
+.repairHelpText span {
+  color: #ff8c00;
+  font-weight: 700;
+}
+
+.repairHelpText h2 {
+  margin: 12px 0 20px;
+  font-size: 48px;
+  color: #222;
+}
+
+.repairHelpText p {
+  color: #666;
+  line-height: 1.8;
+}
+
+.repairFeatureGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+  margin: 35px 0;
+}
+
+.repairFeatureGrid div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #444;
+}
+
+.repairFeatureGrid svg {
+  color: #ff8c00;
+  font-size: 20px;
+}
+
+.repairHelpText button {
+  background: #ff8c00;
+  color: white;
+
+  border: none;
+
+  padding: 12px 28px;
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+.repairPhoneImage {
+  flex: 1;
+  text-align: center;
+}
+
+.repairPhoneImage img {
+  width: 100%;
+  max-width: 450px;
+}
+
+/* BOTTOM BANNER */
+
+.repairBottomBanner {
+  background: linear-gradient(
+    90deg,
+    #ff8c00,
+    #eea852
+  );
+
+  color: white;
+
+  padding: 10px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 60px;
+}
+
+.repairBannerImage img {
+  max-width: 380px;
+  width: 100%;
+}
+
+.repairBannerContent h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.repairBannerContent p {
+  max-width: 550px;
+  line-height: 1.8;
+}
+
+/* TABLET */
+
+@media (max-width: 991px) {
+  .repairHeroContent,
+  .repairHelpSection,
+  .repairBottomBanner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .repairHeroText p {
+    margin: auto;
+  }
+
+  .repairFeatureGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .repairCtaStrip {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+  .repairHeroSection {
+    min-height: auto;
+  }
+
+  .repairHeroText h1 {
+    font-size: 42px;
+  }
+
+  .repairHelpText h2 {
+    font-size: 34px;
+  }
+
+  .repairBannerContent h2 {
+    font-size: 28px;
+  }
+
+  .repairHeroContent {
+    padding: 60px 15px;
+  }
+
+  .repairHelpSection {
+    padding: 60px 15px;
+  }
+
+  .repairBottomBanner {
+    padding: 50px 15px;
+  }
+}
+.missionWrap {
+  padding: 30px 20px;
+  background: #ffffff;
+}
+
+.missionContainer {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* MISSION */
+
+.missionSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+  margin-bottom: 30px;
+}
+
+.missionContent {
+  flex: 1;
+}
+
+.missionTag {
+  display: inline-block;
+  color: #ff8c00;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.missionContent h2 {
+  font-size: 52px;
+  line-height: 1.2;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.missionContent p {
+  color: #666;
+  line-height: 1.9;
+  font-size: 17px;
+}
+
+.missionIconBox {
+  width: 220px;
+  height: 220px;
+  background: linear-gradient(
+    135deg,
+    #ff8c00,
+    #ffb347
+  );
+
+  border-radius: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-size: 90px;
+
+  box-shadow: 0 20px 45px rgba(255,140,0,.25);
+}
+
+/* HEADER */
+
+.blueprintHeader {
+  text-align: center;
+  max-width: 850px;
+  margin: auto auto 40px;
+}
+
+.blueprintHeader span {
+  color: #ff8c00;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.blueprintHeader h2 {
+  font-size: 48px;
+  margin: 15px 0;
+  color: #222;
+}
+
+.blueprintHeader p {
+  color: #666;
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+/* GRID */
+
+.blueprintGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.blueprintCard {
+  background: white;
+  padding: 35px;
+  border-radius: 20px;
+
+  box-shadow: 0 10px 20px #ff8c0063;
+
+  transition: .4s;
+}
+
+.blueprintCard:hover {
+  transform: translateY(-10px);
+}
+
+.blueprintIcon {
+  width: 75px;
+  height: 75px;
+
+  background: linear-gradient(
+    135deg,
+    #ff8c00,
+    #ffb347
+  );
+
+  border-radius: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-size: 30px;
+
+  margin-bottom: 20px;
+}
+
+.blueprintCard h3 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #222;
+}
+
+.blueprintCard p {
+  color: #666;
+  line-height: 1.8;
+}
+
+/* TABLET */
+
+@media (max-width: 991px) {
+  .missionSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .blueprintGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .missionContent h2 {
+    font-size: 42px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+  .missionWrap {
+    padding: 70px 15px;
+  }
+
+  .missionContent h2 {
+    font-size: 32px;
+  }
+
+  .blueprintHeader h2 {
+    font-size: 32px;
+  }
+
+  .missionContent p,
+  .blueprintHeader p,
+  .blueprintCard p {
+    font-size: 15px;
+  }
+
+  .missionIconBox {
+    width: 160px;
+    height: 160px;
+    font-size: 60px;
+  }
+
+  .blueprintCard {
+    padding: 25px;
+  }
+}
